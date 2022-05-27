@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Form.css">
+        <script src="../jQuery/jquery.min.js"></script>
+        <script src="../jQuery/jquery.validate.min.js"></script>
+        <script src="../jQuery/additional-methods.js"></script>
+        <script src="../jQuery/Form.js"></script>
+    </head>
+    <body>
+      <div class="f">
+        <form name="form" id="form" method="post" action="../HTML/Table.html">
+          <table class="table1">
+            <tr><td><p>Name
+                  <span style="color: red;">*</span>
+                </p></td></tr>
+            <tr><td>
+                <input type="text" id="name" name="name"></td>
+            </tr>
+            <tr><td>
+                <label class="a" for="name">Name</label></td>
+            </tr>
+            <tr><td><p>Age
+                  <span style="color: red;">*</span></p>
+                <select class="all" id="select1" name="select1"></select></td>
+            </tr>
+            <tr><td>
+              <p>Phone No.<span style="color: red;">*</span></p></td>
+            </tr>
+            <tr><td>
+                <input type="text" id="mno" placeholder="(000) 000-0000" name="mno"></td>
+            </tr>
+            <tr><td><p>E-mail<span style="color: red;">*</span></p>
+              </td>
+            </tr>
+            <tr><td>
+                <input type="email" id="mail" name="mail" placeholder="ex:email@tntra.io"> </td>
+            </tr>
+            <tr><td><label class="a" for="mail">example@tntra.io</label><span id="ml1" class="span1"></span>
+              </td>
+            </tr>
+          </table>
+          <div class="radio-container"><p>Gender :
+            <input type="radio" id="male" value="male" class="gender" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" value="female" class="gender" name="gender">
+            <label for="female">female</label>
+
+            <input type="radio" id="other" value="other" class="gender" name="gender">
+            <label for="other">other</label>
+            </p></div>
+          <hr>
+         <div> 
+            <input type="checkbox" id="box" name="box">
+            <label class="b" for="box">NEXT-DAY CONFIGURATION</label><br>
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" id="box1" name="box1" class="box">
+                  <label class="box1" for="box1">Sunday</label>
+                </td>
+                <td><select class="box1" id="box11" name="box11"></select></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="box2" name="box2" class="box">
+                  <label class="box2" for="box2">Monday</label>
+                </td>
+                <td><select class="box2" id="box22" name="box22"></select></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="box3" name="box3" class="box">
+                  <label class="box3" for="box3">Tuesday</label>
+                </td>
+                <td><select class="box3" id="box33" name="box33"></select></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="box4" name="box4" class="box">
+                  <label class="box4" for="box4">Wednesday</label>
+                </td>
+                <td><select class="box4" id="box44" name="box44"></select></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="box5" name="box5" class="box">
+                  <label class="box5" for="box5">Thursday</label>
+                </td>
+                <td><select class="box5" id="box55" name="box55"></select></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="box6" name="box6" class="box">
+                  <label class="box6" for="box6">Friday</label>
+                </td>
+                <td><select class="box6" id="box66" name="box66"></select></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="box7" name="box7" class="box">
+                  <label class="box7" for="box7">Saturday</label>
+                </td>
+                <td><select class="box7" id="box77" name="box77"></select></td>
+              </tr>
+            </table>
+          </div><br><br>
+         
+          <button type="submit" class="box" id="submit" onclick="passvalues()">Submit</button>
+        </form>
+      </div>
+    </body>
+</html>
